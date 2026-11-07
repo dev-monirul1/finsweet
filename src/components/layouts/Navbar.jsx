@@ -1,12 +1,24 @@
 import React from 'react'
 import Container from '../common/Container'
+import logo from '../../assets/logo.png'
+import Image from '../ui/Image'
+import Anchor from '../ui/Anchor'
 
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="bg-[#0D0D0D]">
       <Container>
-        <h1 className="text-2xl font-bold bg-red-500">My App</h1>
+        <div className="">
+          <Anchor href="/">
+            <Image src={logo} alt="Not found" />
+          </Anchor>
+          
+        </div>
+        <div className="">
+          <button className='bg-[#FFD2A4] px-12 py-5 uppercase font-normal text-base'>contact us</button>
+        </div>
+        
       </Container>
     </nav>
   )
