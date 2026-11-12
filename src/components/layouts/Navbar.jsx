@@ -7,15 +7,20 @@ import Anchor from '../ui/Anchor'
 import { menuData } from '../../dummyData/menuData'
 import { FaBars } from "react-icons/fa6";
 import { AnimatePresence, motion } from 'motion/react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 
 
 const Navbar = () => {
   const [sidebarShow, setSidebarShow] = useState(false);
 
+  const pathName = useLocation().pathname;
+
   const handleSidebar = () => {
     setSidebarShow(true);
   }
+  
+  console.log(pathName)
+
   return (
     <>
     <nav className="bg-navbg py-3 md:py-5 lg:py-3 w-full overflow-x-hidden">
@@ -28,7 +33,7 @@ const Navbar = () => {
             <ul className='hidden lg:flex items-center gap-12'>
               {menuData.map((item, index) => (
                 <li key={index}>
-                  <NavLink to={item.url} className='text-white text-base uppercase font-normal font-roboto'>
+                  <NavLink to={item.url} className={` text-base uppercase font-normal font-roboto ${item.url === pathName ? "text-red-500" : "text-white"}`}>
                     {item.label}
                   </NavLink>
                 </li>
