@@ -20,3 +20,21 @@ export const menuData = [
     url: '#'
   }
 ]
+
+export const companyInfo = [
+  {
+    id: 1,
+    title: "Phone",
+    value: "(480) 555-0103"
+  },
+  {
+    id: 2,
+    title: "Address",
+    value: "4517 Washington Ave."
+  },
+  {
+    id: 3,
+    title: "Email",
+    value: "finsweet@example.com"
+  }
+]
