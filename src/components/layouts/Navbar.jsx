@@ -7,6 +7,7 @@ import Anchor from '../ui/Anchor'
 import { menuData } from '../../dummyData/menuData'
 import { FaBars } from "react-icons/fa6";
 import { AnimatePresence, motion } from 'motion/react'
+import { NavLink } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -27,9 +28,9 @@ const Navbar = () => {
             <ul className='hidden lg:flex items-center gap-12'>
               {menuData.map((item, index) => (
                 <li key={index}>
-                  <Anchor href={item.url} className='text-white text-base uppercase font-normal font-roboto'>
+                  <NavLink to={item.url} className='text-white text-base uppercase font-normal font-roboto'>
                     {item.label}
-                  </Anchor>
+                  </NavLink>
                 </li>
               ))}
             </ul>
@@ -62,12 +63,12 @@ const Navbar = () => {
             <ul className="flex flex-col gap-6 px-6">
               {menuData.map((item) => (
                 <li key={item.url}>
-                  <Anchor
-                    href={item.url}
+                  <NavLink
+                    to={item.url}
                     className="text-white text-base uppercase font-normal font-roboto"
                   >
                     {item.label}
-                  </Anchor>
+                  </NavLink>
                 </li>
               ))}
             </ul>

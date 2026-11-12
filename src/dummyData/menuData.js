@@ -2,22 +2,22 @@ export const menuData = [
   {
     id: 1,
     label: 'Home',
-    url: '#'
+    url: '/'
   },
   {
     id: 2,
     label: 'About us',
-    url: '#'
+    url: '/about'
   },
   {
     id: 3,
     label: 'Sermon',
-    url: '#'
+    url: '/sermon'
   },
   {
     id: 4,
     label: 'Blog',
-    url: '#'
+    url: '/blog'
   }
 ]
 

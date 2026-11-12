@@ -7,10 +7,10 @@ import Footer from '../../components/layouts/Footer'
 const HomeIndex = () => {
   return (
     <>
-    <Navbar/>
+    
     <Banner/>
     <Relevents/>
-    <Footer/>
+    
     </>
     
   )
