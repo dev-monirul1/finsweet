@@ -20,6 +20,28 @@ export const menuData = [
     url: '/blog'
   }
 ]
+export const Quicklinks = [
+  {
+    id: 1,
+    label: 'About us',
+    url: '#'
+  },
+  {
+    id: 2,
+    label: 'Sermon',
+    url: '#'
+  },
+  {
+    id: 3,
+    label: 'Events',
+    url: '#'
+  },
+  {
+    id: 4,
+    label: 'Blog',
+    url: '#'
+  }
+]
 
 export const companyInfo = [
   {
