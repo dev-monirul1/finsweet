@@ -1,8 +1,14 @@
 import React from 'react'
+import Container from '../../common/Container'
 
 const Relevents = () => {
   return (
-    <div>Relevents</div>
+    <section>
+      <Container>
+        <div>Relevents</div>
+      </Container>
+    </section>
+    
   )
 }
 
