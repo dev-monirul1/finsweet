@@ -13,6 +13,7 @@ const HomeIndex = () => {
     <Banner/>
     <Relevents/>
     
+    
     </>
     
   )
