@@ -5,6 +5,7 @@ import RootLayout from './components/layouts/RootLayout'
 import ErrorPage from './components/common/ErrorPage'
 import BlogIndex from './pages/blog/BlogIndex';
 import BlogSingleIndex from './pages/blog/blogSingle/BlogSingleIndex';
+import AboutIndex from './components/pages/about/AboutIndex';
 
 
 
@@ -14,9 +15,9 @@ const routes = createRoutesFromElements(
   <>
   <Route element={<RootLayout />}>
     <Route path="/" element={<HomeIndex />} />
-    <Route path="/about" element={'Data about page'} />
+    <Route path="/about" element={<AboutIndex/>} />
     <Route path="/blog" element={<BlogIndex />} />   
-    <Route path="/blog/:slug" element={<BlogSingleIndex/>} />   
+    <Route path="/blog/:slug" element={<BlogSingleIndex/>} /> 
   </Route>
   <Route path="*" element={<ErrorPage />} />
   </>

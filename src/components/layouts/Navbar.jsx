@@ -19,7 +19,7 @@ const Navbar = () => {
     setSidebarShow(true);
   }
   
-  console.log(pathName)
+  // console.log(pathName)
 
   return (
     <>
