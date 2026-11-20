@@ -9,7 +9,6 @@ const RootLayout = () => {
   return (
     <>
       <ToastContainer />
-
       <Navbar />
       <Outlet />
       <Footer />
